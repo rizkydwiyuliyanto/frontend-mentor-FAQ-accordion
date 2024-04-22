@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(249, 240, 255);
+  position: relative;
+}
+
+.bg {
+  background-color: hsl(292, 42%, 14%);
+  z-index: -5;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-image: url("./../images/background-pattern-desktop.svg");
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.modal {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 6px;
+  position: relative;
+  padding: 2em 0;
+  top: -4%;
+  max-width: 600px;
+  font-family: "Work Sans";
+}
+@media screen and (max-width: 600px) {
+  .modal {
+    width: 90%;
+  }
+}
+.modal .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 17px;
+}
+.modal .header img {
+  margin-right: 15px;
+}
+.modal .header h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+  .modal .header h1 {
+    font-size: 27px;
+  }
+}
+.modal .accordion-item {
+  margin-bottom: 30px;
+}
+.modal .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.modal .accordion-item .accordion-item-header {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal .accordion-item .accordion-item-header span {
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 25px;
+}
+.modal .accordion-item .accordion-item-content {
+  color: hsl(292, 16%, 49%);
+  transition: height 0.2s 0s ease-in;
+  overflow: hidden;
+}/*# sourceMappingURL=style.css.map */
